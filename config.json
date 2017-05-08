@@ -1,0 +1,47 @@
+{
+	"name": "Color Matrix",
+
+	"description": "This module changes the background color of a choice matrix on a survey.",
+
+    "authors": [
+        {
+            "name": "Scott J. Pearson",
+            "email": "scott.j.pearson@vanderbilt.edu"
+        }
+    ],
+	
+	"permissions": [
+		"hook_survey_page_top",
+		"hook_data_entry_form_top"
+	],
+
+	"links": {
+	},
+
+	"global-settings": [
+	],
+	
+	"project-settings": [
+		{
+			"key": "matrix-group",
+			"name": "Matrix Group Name (encoded)",
+			"required": false,
+			"type": "text",
+			"repeatable": false
+		},
+		{
+			"key": "label-color",
+			"name": "Label HTML background color (if different)",
+			"required": false,
+			"type": "text",
+			"repeatable": false
+		},
+		{
+			"key": "column-color",
+			"name": "Column HTML background color (if different); 1 per column, in order",
+			"required": false,
+			"type": "text",
+			"repeatable": true
+		}
+	]
+}
