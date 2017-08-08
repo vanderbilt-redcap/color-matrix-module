@@ -1,6 +1,8 @@
 {
 	"name": "Color Matrix",
 
+	"namespace": "Vanderbilt\\ColorMatrixExternalModule",
+
 	"description": "This module changes the background color of a choice matrix on a survey.",
 
     "authors": [

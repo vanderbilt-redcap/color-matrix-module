@@ -1,4 +1,7 @@
-<?php namespace ExternalModules;
+<?php namespace Vanderbilt\ColorMatrixExternalModule;
+
+use ExternalModules\AbstractExternalModule;
+use ExternalModules\ExternalModules;
 
 class ColorMatrixExternalModule extends AbstractExternalModule
 {
