@@ -14,8 +14,8 @@
     ],
 	
 	"permissions": [
-		"hook_survey_page_top",
-		"hook_data_entry_form_top"
+		"redcap_survey_page_top",
+		"redcap_data_entry_form_top"
 	],
 
 	"links": {
@@ -31,14 +31,14 @@
 		},
 		{
 			"key": "label-color",
-			"name": "Background color for the matrix - either as hex color value (e.g., #0000FF) or color name (e.g., blue)",
+			"name": "Background color for the matrix headers and labels<br>- either as hex color value (e.g., #0000FF) or color name (e.g., blue)",
 			"required": false,
 			"type": "text",
 			"repeatable": false
 		},
 		{
 			"key": "column-color",
-			"name": "Background color of each column (if different from initial color above); 1 per column, in order",
+			"name": "Background color of each column (1 per column, in order)",
 			"required": false,
 			"type": "text",
 			"repeatable": true
