@@ -3,7 +3,7 @@
 
 	"namespace": "Vanderbilt\\ColorMatrixExternalModule",
 
-	"description": "This module changes the background color of a choice matrix on a survey. Specify the matrix choice name and the background HTML color; voila!",
+	"description": "Allows users to change the background color of a matrix of fields on a survey. Specify the matrix choice name and the background HTML color; voila!",
 
     "authors": [
         {
@@ -14,8 +14,8 @@
     ],
 	
 	"permissions": [
-		"hook_survey_page_top",
-		"hook_data_entry_form_top"
+		"redcap_survey_page_top",
+		"redcap_data_entry_form_top"
 	],
 
 	"links": {
@@ -24,21 +24,21 @@
 	"project-settings": [
 		{
 			"key": "matrix-group",
-			"name": "Matrix Group Name (encoded)",
+			"name": "Matrix group name",
 			"required": false,
 			"type": "text",
 			"repeatable": false
 		},
 		{
 			"key": "label-color",
-			"name": "Label HTML background color (if different)",
+			"name": "Background color for the matrix headers and labels<br>- either as hex color value (e.g., #0000FF) or color name (e.g., blue)",
 			"required": false,
 			"type": "text",
 			"repeatable": false
 		},
 		{
 			"key": "column-color",
-			"name": "Column HTML background color (if different); 1 per column, in order",
+			"name": "Background color of each column (1 per column, in order)",
 			"required": false,
 			"type": "text",
 			"repeatable": true
